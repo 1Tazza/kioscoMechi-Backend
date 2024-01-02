@@ -33,10 +33,9 @@ module.exports = (sequelize) => {
       defaultValue: "",
       allowNull: true
     },
-    categories: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
-        allowNull: true,
-        defaultValue: []
+    category: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
     company: {
         type: DataTypes.ARRAY(DataTypes.JSON),

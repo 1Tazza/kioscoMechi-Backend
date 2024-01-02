@@ -25,6 +25,7 @@ router.post("/db", async(req,res) =>  {
         res.status(201).send({message: "Succesful Creation"})
        }
        catch(e) {
+        console.log(e)
        res.status(404).send({error: console.log(e)})
        }
 
