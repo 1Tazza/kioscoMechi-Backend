@@ -35,7 +35,7 @@ module.exports = (sequelize) => {
     },
     category: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     company: {
         type: DataTypes.ARRAY(DataTypes.JSON),

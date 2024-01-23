@@ -26,9 +26,10 @@ router.post("/newProduct", upload.single("image"), async(req,res) =>  {
     obj.price = parseInt(obj.price)
     obj.brand = [obj.brand]
 
+
     const newProduct = await Product.create(obj);
 
-    return res.status(201).json({key: key})
+    return res.status(201).json(newProduct)
    
 
 });
